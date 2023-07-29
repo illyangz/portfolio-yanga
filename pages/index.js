@@ -109,7 +109,7 @@ export default function Home() {
                 <p class="skill-item opacity-60">Python</p>
                 <p class="skill-item opacity-60">Swift</p>
                 <p class="skill-item opacity-60">C#</p>
-                <p class="skill-item opacity-60">Swift</p>
+                <p class="skill-item opacity-60">Svelte</p>
                 <p class="skill-item opacity-60">TypeScript</p>
                 <p class="skill-item opacity-60">HTML/CSS</p>
                 <p class="skill-item opacity-60">SQL</p>
