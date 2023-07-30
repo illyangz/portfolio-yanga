@@ -2,108 +2,74 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { HiExternalLink } from "react-icons/hi";
-import { LuInstagram } from "react-icons/lu";
 import Spline from "@splinetool/react-spline";
+import { CgMusicSpeaker } from "react-icons/cg";
+import { HiOutlineMail } from "react-icons/hi";
+import { VscGithub } from "react-icons/vsc";
+import { TiSocialInstagram } from "react-icons/ti";
+import { PiLinkedinLogoBold } from "react-icons/pi";
+import { GiAudioCassette } from "react-icons/gi";
+import { CgMusic } from "react-icons/cg";
+import {TbPremiumRights} from "react-icons/tb"
+
 
 export default function Home() {
   return (
-    <div>
+    <div className="body">
       <Head>
-        <title>Hassan Mango </title>
+        <title>Hassan Mango</title>
         <link rel="icon" href="/blob.png" />
       </Head>
-
-      <main className="px-10">
-        <section className="min-h-screen">
-          <nav className="py-10 mx-10 mb-12 flex justify-between">
-            <h1 className="font-orbit hover:text-[#FFa048]">
-              developedbymango
-            </h1>
-            <ul className="flex items-center">
-              <li>
-                <a
-                  className="hover:text-[#FFA048]"
+      
+      <main className="main-container">
+   
+      <div className="nav-container mx-10 mt-10">
+          <div className="flex items-center hover:text-[#FFA048]">developedby 🥭</div>
+          <a className="hover:text-[#FFA048]"
                   href="/Hassan-Resume.pdf"
-                  target="_blank"
-                >
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div className="flex center">
-            <h2 className="ml-40 font-newsreader" style={{ fontSize: "100px" }}>
-              Hello. <br /> I am{" "}
-              <span className="font-bold text-[#FFa048] hover:animate-bounce">
-                Yanga
-              </span>
-            </h2>
-
-            <img
-              className="ml-60 animate-spin"
-              src="/blob.png"
-              alt="Icon"
-              width={300}
-              height={230}
-              style={{
-                animation: "spin 60s linear infinite",
-              }}
-            />
-          </div>
-
-          <div className="pt-20 hover:animate-pulse pb-5 ">
-            <h1 className="ml-20 font-orbit" style={{ fontSize: "40px" }}>
-              <a
+                  target="_blank">Resume</a>
+      </div>
+       
+        <div className="intro-title">
+          <h1>Hello. I am <span className="text-[#FFA048] font-bold">Yanga</span></h1>
+            </div>
+            
+            <div className="container">
+            <h1 className="hover:animate-pulse">
+              <a className="music"
                 href="https://soundcloud.com/yangzog"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 some music I've been listening to on SoundCloud
+                <CgMusicSpeaker className="ml-1 mt-1"/>
               </a>
             </h1>
           </div>
-        </section>
-        <section className="bg-212421 text-white py-10">
-          <div className="flex">
-            <h2 className="px-20 ml-20 pl-10" style={{ fontSize: "80px" }}>
-              about<span className="text-[#FFa048]">_</span>me
-            </h2>
-          </div>
-          <div>
-            <p className="font-orbit px-20 pt-5 ml-20 opacity-70">
-              My name is Hassan but you can also call me{" "}
-              <span className="hover:text-[#FFa048] opacity-100">yanga</span>.
-              I'm a Web Developer <br />
-              from <span className="hover:text-[#2bae2b]">It</span>a
-              <span className="hover:text-[#ff3030]">ly</span> and{" "}
-              <span className="hover:text-[black]">Jo</span>
-              <span className="hover:text-[#ffffff]">r</span>
-              <span className="hover:text-[#ff3030]">d</span>
-              <span className="hover:text-[white]">a</span>
-              <span className="hover:text-[#2bae2b]">n</span>. I like to mix
-              music for fun. When I am not <br /> programming, I am playing ⚽.
-              I work with many agencies, startups and <br />
-              individuals to hypothesize an imaginative blueprint for their
-              digital
-              <br /> businesses. My clients have relied on me to create, design
-              and <br />
-              implement their perspectives in the digital world.
-            </p>
-          </div>
-          <div className="ml-20 mr-20">
-            <Spline
+
+
+          <Spline class="spline-container"
               scene="https://prod.spline.design/qqhA5qelQHGqJK7U/scene.splinecode"
               className="flex justify-items-center"
             />
-          </div>
-        </section>
-        <section className="bg-212421 text-white py-10 pb-10">
-          <div className="flex center flex-col">
-            <h2 className="px-20 ml-20 flex pl-10" style={{ fontSize: "80px" }}>
-              technical<span className="text-[#FFa048]">_</span>skills
-            </h2>
-            <div class="skills-container mt-5 flex px-20 ml-20 ">
-              <div class="skill-column mr-20 py-5 pr-8">
+          
+            <div className="about-container">
+              <div>about<span className="text-[#FFA048]">_</span>me</div>
+              <div className="about-text">
+                <p className="opacity-70">
+                  My name is Hassan but you can call me <span className="hover:text-[#FFA048]">yanga</span>. I'm a Web Developer from Italy and Jordan. I like to mix
+              music for fun. When I am not programming, I am playing ⚽. I work with many agencies, startups and individuals to hypothesize an imaginative blueprint for their
+              digital businesses. My clients have relied on me to create, design and implement their perspectives in the digital world. 
+                  </p>
+              </div>
+            </div>
+
+
+            <div class="skills">
+              <div>technical<span className="text-[#FFA048]">_</span>skills</div>
+              <div className="flex center">
+              <div class="skills-container">
+              <div class="skill-column">
                 <p class="skill-heading underline">Languages</p>
                 <p class="skill-item opacity-60">JavaScript</p>
                 <p class="skill-item opacity-60">Python</p>
@@ -114,9 +80,8 @@ export default function Home() {
                 <p class="skill-item opacity-60">HTML/CSS</p>
                 <p class="skill-item opacity-60">SQL</p>
               </div>
-
-              <div class="skill-column pl-6 mr-20 py-5 pr-8">
-                <p class="skill-heading underline">Frameworks</p>
+              <div class="skill-column">
+              <p class="skill-heading underline">Frameworks</p>
                 <p class="skill-item opacity-60">React</p>
                 <p class="skill-item opacity-60">Next.js</p>
                 <p class="skill-item opacity-60">Three.js</p>
@@ -126,9 +91,8 @@ export default function Home() {
                 <p class="skill-item opacity-60">TailwindCSS</p>
                 <p class="skill-item opacity-60">Bootstrap</p>
               </div>
-
-              <div class="skill-column pl-6 mr-20 py-5 pr-8">
-                <p class="skill-heading underline">Technologies</p>
+              <div class="skill-column">
+              <p class="skill-heading underline">Technologies</p>
                 <p class="skill-item opacity-60">Blender</p>
                 <p class="skill-item opacity-60">Node.js</p>
                 <p class="skill-item opacity-60">Figma</p>
@@ -138,9 +102,8 @@ export default function Home() {
                 <p class="skill-item opacity-60">Womp3D</p>
                 <p class="skill-item opacity-60">Wordpress </p>
               </div>
-
-              <div class="skill-column pl-6 mr-20 py-5 pr-8">
-                <p class="skill-heading underline">DevOps</p>
+              <div class="skill-column">
+              <p class="skill-heading underline">DevOps</p>
                 <p class="skill-item opacity-60">Azure</p>
                 <p class="skill-item opacity-60">AWS</p>
                 <p class="skill-item opacity-60">Git</p>
@@ -152,17 +115,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
-        <section className="bg-212421 text-white py-5 pb-20">
-          <div className="flex center flex-col">
-            <h2
-              className="px-20 pb-10 ml-20 text-lg pl-10 flex"
-              style={{ fontSize: "80px" }}
-            >
-              selected<span className="text-[#FFa048]">_</span>works
-            </h2>
-            <div class="mx-20 px-20 py-5">
-              <p className="flex flex-row">
+        </div>
+
+        <div class="works-container">
+        <div>selected<span className="text-[#FFA048]">_</span>works</div>
+        <div className="works-card">
+        <p className="flex flex-row mt-2">
                 <Link
                   href="https://wajeez.com/"
                   target="_blank"
@@ -175,9 +133,7 @@ export default function Home() {
                 <a className="flex ml-auto">December 2022</a>
               </p>
               <span className="opacity-60">Intern - Front End Engineer</span>
-            </div>
-            <div class="mx-20 px-20 py-5">
-              <p className="flex flex-row">
+               <p className="flex flex-row mt-8">
                 <Link
                   href="https://docs.carbovalent.com/the-carbovalent-protocol"
                   target="_blank"
@@ -190,9 +146,7 @@ export default function Home() {
                 <a className="flex ml-auto">November - December 2022</a>
               </p>
               <span className="opacity-60">Ideator</span>
-            </div>
-            <div class="mx-20 px-20 py-5">
-              <p className="flex flex-row">
+              <p className="flex flex-row mt-8">
                 <Link
                   href="https://plasticpalletpros.com/"
                   target="_blank"
@@ -202,12 +156,10 @@ export default function Home() {
                   <HiExternalLink className="ml-1" color="white" size={20} />
                 </Link>
 
-                <a className="flex ml-auto">June - July 2021</a>
+                <a className="flex ml-auto ">June - July 2021</a>
               </p>
               <span className="opacity-60">Web Developer</span>
-            </div>
-            <div class="mx-20 px-20 py-5">
-              <p className="flex flex-row">
+              <p className="flex flex-row mt-8">
                 <Link
                   href="https://meksonmain.com/"
                   target="_blank"
@@ -220,34 +172,25 @@ export default function Home() {
                 <a className="flex ml-auto">June - July 2021</a>
               </p>
               <span className="opacity-60">Web Developer</span>
-            </div>
-            <div class="mx-20 px-20 py-5">
               <p className="flex flex-row">
                 <Link
                   href="https://www.scottmcclintocklaw.com/"
                   target="_blank"
-                  className="flex items-center"
+                  className="flex items-center mt-8"
                 >
                   Scott McClintock Law
                   <HiExternalLink className="ml-1" color="white" size={20} />
                 </Link>
 
-                <a className="flex ml-auto">May - June 2021</a>
+                <a className="flex ml-auto mt-8">May - June 2021</a>
               </p>
               <span className="opacity-60">Front End Engineer</span>
-            </div>
-          </div>
-        </section>
-        <section className="bg-212421 text-white pb-10">
-          <div className="flex center flex-col">
-            <h2
-              className="px-20 py-20 ml-20 pl-10 text-lg flex "
-              style={{ fontSize: "80px" }}
-            >
-              pending<span className="text-[#FFa048]">_</span> projects
-            </h2>
-            <div className="flex col-span-4 flex-auto px-20 ml-10">
-              <div className="card mr-4">
+        </div>
+        </div>
+        <div class="projects">
+        <div>active<span className="text-[#FFA048]">_</span>projects</div>
+        <div className="flex col-span-3 flex-auto">
+              <div className="card mt-5">
                 <p className="mb-2">Gatinha - Brazil </p>
                 <p>
                   Imagine a dating/social meeting app in Brazil. The catch is AI
@@ -255,129 +198,129 @@ export default function Home() {
                   on matches.
                 </p>
               </div>
-              <div className="card mr-4">
-                <p className="mb-2">Free lottery - Jordan</p>
+              <div className="card mt-5 ml-2">
+                <p className="mb-2">Rabi7ni - Jordan </p>
                 <p>
-                  An application that allows consumers to try and win prizes of
-                  a lottery system that is sponsored by local brands.
+                After watching a short ad from a local business, users will scratch cards in 
+                order to have a chance to win free items from those local business & brands 
                 </p>
               </div>
-              <div className="card mr-4">
-                <p className="mb-2">Tajamo3 - Jordan</p>
+              <div className="card mt-5 ml-2">
+                <p className="mb-2">Tajamo3 - Jordan </p>
                 <p>
-                  An app that works almost like a map with attributes, with free
+                An app that has a map with attributes, with free
                   things to do around the country - like hikes, picnic
                   locations, waterfalls, rivers and much more.
                 </p>
               </div>
             </div>
-            <div className="flex col-span-4 flex-auto px-20 ml-10 pt-4">
-              <div className="card mr-4">
-                <p className="mb-2">Cleanup Crew - World </p>
+            <div className="flex col-span-3 flex-auto">
+              <div className="card mt-2">
+                <p className="mb-2">Cleanup Crew - World  </p>
                 <p>
-                  Connecting users with professional cleaners for convenient and
-                  efficient on-demand cleanup, promoting a cleaner world.
+                Connecting clients with professional facility cleaners for convenient and
+                  efficient on-demand cleanup, quasi promoting a cleaner world per location.
                 </p>
               </div>
-              <div className="card mr-4">
-                <p className="mb-2">7ajzi - MENA Region</p>
+              <div className="card mt-2 ml-2">
+                <p className="mb-2">7ajzi - MENA Region </p>
                 <p>
-                  An interface for creating & managing bookings with live
+                An interface for creating & managing bookings with live
                   feedback on spaces or seats available at a certain venue.
                 </p>
               </div>
-              <div className="card mr-4">
+              <div className="card mt-2 ml-2">
                 <p className="mb-2">FirstHealth - World</p>
                 <p>
-                  A network system where subscribers will have the ability to
+                A network system where subscribers will have the ability to
                   prioritize appointments based on their subscription package.
                 </p>
               </div>
             </div>
-          </div>
-        </section>
-        <section className="bg-212421 text-white py-5 pb-20">
-          <div className="flex justify-center">
-            <h2
-              className="px-20 pb-10 flex justify-center "
-              style={{ fontSize: "80px" }}
-            >
-              contact<span className="text-[#FFa048]">_</span> me
-            </h2>
-          </div>
-          <div
-            className="flex justify-center pb-2 hover:animate-pulse"
-            style={{ fontSize: "40px" }}
-          >
-            <a href="mailto:hmango77@gmail.com">Email</a>
-          </div>
-          <div
-            className="flex justify-center pb-2"
-            style={{ fontSize: "40px" }}
-          >
-            <a
-              href="https://github.com/illyangz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:animate-pulse"
-            >
-              Github
-            </a>
-          </div>
-          <div
-            className="flex justify-center pb-2"
-            style={{ fontSize: "40px" }}
-          >
-            <a
-              href="https://www.instagram.com/hassannmango/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:animate-pulse"
-            >
-              Instagram
-            </a>
-          </div>
-          <div
-            className="flex justify-center pb-2"
-            style={{ fontSize: "40px" }}
-          >
-            <a
-              href="https://www.linkedin.com/in/hassan-mango-11791223b/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:animate-pulse"
-            >
-              LinkedIn
-            </a>
-          </div>
-          <div
-            className="flex justify-center pb-2"
-            style={{ fontSize: "40px" }}
-          >
-            <a
-              href="https://soundcloud.com/yangzog"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:animate-pulse"
-            >
-              SoundCloud
-            </a>
-          </div>
-          <div
-            className="flex justify-center pb-2"
-            style={{ fontSize: "40px" }}
-          >
-            <a
-              href="https://music.apple.com/profile/yanga8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:animate-pulse"
-            >
-              Apple Music
-            </a>
-          </div>
-        </section>
+        </div>
+<div class="contact">
+  <div class="flex justify-center mb-8">
+    <h2>
+      contact<span class="text-[#FFa048]">_</span>me
+    </h2>
+  </div>
+  <div class="contact-text">
+    <a
+      href="https://github.com/illyangz"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:animate-pulse flex items-center"
+    >
+      Email
+      <HiOutlineMail class="ml-2" />
+    </a>
+  </div>
+  <div class="contact-text">
+    <a
+      href="https://github.com/illyangz"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:animate-pulse flex items-center"
+    >
+      Github 
+      <VscGithub class="ml-2" />
+    </a>
+  </div>
+  <div class="contact-text">
+    <a
+      href="https://instagram.com/hassannmango/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:animate-pulse flex items-center"
+    >
+      Instagram 
+      <TiSocialInstagram class="ml-2" />
+    </a>
+  </div>
+  <div class="contact-text">
+    <a
+      href="https://www.linkedin.com/in/hassan-mango-11791223b/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:animate-pulse flex items-center"
+    >
+      LinkedIn 
+      <PiLinkedinLogoBold class="ml-2" />
+    </a>
+  </div>
+  <div class="contact-text">
+    <a
+      href="https://soundcloud.com/yangzog"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:animate-pulse flex items-center"
+    >
+      SoundCloud 
+      <GiAudioCassette class="ml-2" />
+    </a>
+  </div>
+  <div class="contact-text">
+    <a
+      href="https://music.apple.com/profile/yanga8"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:animate-pulse flex items-center"
+    >
+      Apple Music 
+      <CgMusic class="ml-2" />
+    </a>
+  </div>
+</div>
+<div class="flex items-center">
+  <span class="ml-2">Yanga</span>
+  <hr class="flex-grow mx-4 border-t border-gray-300" />
+  <span class="flex items-center">
+    Copyright @2023 Hassan Mango <TbPremiumRights class="ml-1 mr-2" />
+  </span>
+</div>
+
       </main>
     </div>
   );
 }
+
