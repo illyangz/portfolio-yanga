@@ -318,10 +318,10 @@ export default function Home() {
   </div>
 </div>
 <div class="flex items-center">
-  <span class="ml-2">Yanga</span>
+  <span class="ml-4">Yanga</span>
   <hr class="flex-grow mx-4 border-t border-gray-300" />
   <span class="flex items-center">
-    Copyright @2023 Hassan Mango <TbPremiumRights class="ml-1 mr-2" />
+    Copyright @2023 Hassan Mango <TbPremiumRights class="ml-1 mr-5" />
   </span>
 </div>
 

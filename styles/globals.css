@@ -15,7 +15,10 @@
     color: white;
     font-family: "Newsreader", serif, "Orbit", sans-serif; /* Multiple font families separated by commas */
     overflow-y: auto;
+    display: flex;
+    
 }
+
 
   html, body {
     margin: 0;
@@ -41,6 +44,7 @@
     margin-left:auto;
     margin-right: auto;
     justify-content: space-between;
+    font-family: "Orbit";
 
   }
 .music{
