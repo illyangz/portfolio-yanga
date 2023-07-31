@@ -7,15 +7,16 @@
   @import url("https://fonts.googleapis.com/css2?family=Orbit&display=swap");
   body {
     max-width: 100vw;
+    max-height: 100vh;
     background: linear-gradient(to bottom, #292994, #18181B);
-    background-size: 100vh; /* Set the background size to cover the entire viewport height */
+    background-size: cover; /* Set the background size to cover the entire viewport */
     background-attachment: fixed; /* Prevent the background from scrolling with the content */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
     color: white;
-    font-family: "Newsreader", serif;
-    font-family: "Orbit", sans-serif;
+    font-family: "Newsreader", serif, "Orbit", sans-serif; /* Multiple font families separated by commas */
     overflow-y: auto;
- 
-  }
+}
+
   html, body {
     margin: 0;
     padding: 0;  
@@ -203,7 +204,14 @@
   }
 
 }
+@media (max-width: 2000px){}
+.card {
 
+  height: 400px;
+  font-size: 25px;
+}
+
+}
 @layer components {
 /* Glow effect on hover */
 .card:hover::before {
@@ -264,4 +272,4 @@
     
     
     }
-  }
+  
