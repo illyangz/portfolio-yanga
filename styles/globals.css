@@ -47,6 +47,14 @@
     font-family: "Orbit";
 
   }
+  @media (max-width: 900px) {
+    .nav-container{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+  }
+
 .music{
   display: flex;
   justify-content: center;
@@ -57,9 +65,9 @@
   font-size: 33px;
 
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .music{
-    font-size: 15px; /* Adjust the font size for smaller screens */
+    font-size: 25px; /* Adjust the font size for smaller screens */
     margin-bottom: 2%;
   }
 
@@ -83,9 +91,9 @@
     margin-top:10%
 
   }
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .intro-title{
-      font-size: 60px; /* Adjust the font size for smaller screens */
+      font-size: 90px; /* Adjust the font size for smaller screens */
     }
   
   }
@@ -113,12 +121,12 @@
     margin-bottom: 10%;
     
   }
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .about-container{
-      font-size: 33px;
+      font-size: 60px;
     }
     .about-text{
-      font-size: 10px; /* Adjust the font size for smaller screens */
+      font-size: 33px; /* Adjust the font size for smaller screens */
     }
   
   }
@@ -131,16 +139,16 @@
     margin-right:10%;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .skills{
-      font-size: 33px; /* Adjust the font size for smaller screens */
+      font-size: 60px; /* Adjust the font size for smaller screens */
     }
   
   }
  
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .skill-column{
-      font-size: 10px; /* Adjust the font size for smaller screens */
+      font-size: 33px; /* Adjust the font size for smaller screens */
     }
   
   }
@@ -149,7 +157,7 @@
     justify-content: space-between;
     width: 115%;
     margin-left: 3px;
-    font-size:25px;
+    font-size:33px;
     margin-bottom: 10%;
   }
  
@@ -158,7 +166,7 @@
     justify-content: center;
     margin-left:10%;
     font-family: "Orbit";
-    font-size: 45px;
+    font-size: 60px;
     margin-right:10%;
     margin-bottom:10%;
   }
@@ -173,9 +181,9 @@
     margin-bottom:10px;
     
   }
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .works-card{
-      font-size: 10px; /* Adjust the font size for smaller screens */
+      font-size: 33px; /* Adjust the font size for smaller screens */
       
     }
   
@@ -201,18 +209,22 @@
   width: 500px;/* Transition for the glow effect and shadow */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .card{
-    font-size: 10px; /* Adjust the font size for smaller screens */
+    font-size: 33px; /* Adjust the font size for smaller screens */
     height: 250px;
+  }
+  .projects{
+    font-size: 60px;
   }
 
 }
 @media (max-width: 2000px){}
 .card {
 
-  height: 400px;
-  font-size: 25px;
+  height: 600px;
+  width: 550px;
+  font-size: 33px;
 }
 
 }
@@ -250,7 +262,7 @@
     margin-bottom: 10%;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .contact{
       font-size: 45px; /* Adjust the font size for smaller screens */
      
@@ -269,7 +281,7 @@
       margin-bottom: 2%;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       .contact-text{
         font-size: 25px;
       }

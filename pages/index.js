@@ -151,7 +151,7 @@ export default function Home() {
 
                 <a className="flex ml-auto">November - December 2022</a>
               </p>
-              <span className="opacity-60">Ideator</span>
+              <span className="opacity-60">Ideator/Consultant</span>
               <p className="flex flex-row mt-8">
                 <Link
                   href="https://plasticpalletpros.com/"
