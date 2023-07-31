@@ -16,9 +16,15 @@ import {TbPremiumRights} from "react-icons/tb"
 export default function Home() {
   return (
     <div className="body">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Newsreader&family=Orbit&display=swap" rel="stylesheet"
+        />
       <Head>
         <title>Hassan Mango</title>
         <link rel="icon" href="/blob.png" />
+        
       </Head>
       
       <main className="main-container">
