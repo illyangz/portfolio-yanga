@@ -4,43 +4,21 @@
     z-index: 1000;
     height: 100px;
   }
-  
-  .alpha-labs-logo {
-    width: 75%;
-    transition: opacity 0.3s ease-in-out;
-    cursor: pointer;
+
+  .font-Orbit {
+    font-family: "Orbit", sans-serif;
   }
   
+
+  .header{
+    font-family: "Orbit"; 
+  }
   .navbar-items {
-    /* font-family: "Poppins"; */
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Orbit"; 
     font-style: normal;
     color: rgb(39, 40, 41);
     font-weight: 500;
     font-size: 16px;
     margin-top: 10px;
-  }
-  
-  .alpha-labs-logo:hover {
-    opacity: 0.6;
-  }
-  
-  .twitter-logo {
-    margin-right: 20px;
-    transition: opacity 0.3s ease-in-out;
-    cursor: pointer;
-  }
-  
-  .twitter-logo:hover {
-    opacity: 0.6;
-  }
-  
-  .discord-logo {
-    cursor: pointer;
-    margin-right: 25px;
-  }
-  
-  .discord-logo:hover {
-    opacity: 0.6;
   }
   
