@@ -238,8 +238,7 @@ export default function Home() {
                 <p className="card-title mb-2">Gatinha - Brazil </p>
                 <p className="card-text">
                   Imagine a dating/social meeting app in Brazil. The catch is AI
-                  bots representing individuals will be chatting together based
-                  on matches.
+                  bots representing matched individuals will be chatting together on the behalf of users.
                 </p>
               </div>
               <div className="card mt-5 mr-2">
@@ -255,9 +254,10 @@ export default function Home() {
               <div className="card mt-2 mr-2">
                 <p className="card-title mb-2">Cleanup Crew - Jordan</p>
                 <p className="card-text">
-                  Imagine a dating/social meeting app in Brazil. The catch is AI
-                  bots representing individuals will be chatting together based
-                  on matches.
+                On demand cleaning services from our crew, 
+                at specific locations. Goal is to have a cleaner world, 
+                one location at a time. 
+
                 </p>
               </div>
               <div className="card mt-2 mr-2">
@@ -334,7 +334,8 @@ export default function Home() {
         target="_blank"
         class="border-b-[1px] border-current pb-[-1px] opacity-[0.99]"
       >
-        hmango77@gmail.com
+        <p className="contact-text">hmango77@gmail.com</p>
+        
       </Link>
     </p>
   </div>
@@ -351,7 +352,7 @@ export default function Home() {
         target="_blank"
         class="border-b-[1px] border-current pb-[-1px] opacity-[0.99]"
       >
-        SoundCloud
+        <p className="contact-text">SoundCloud</p>
       </Link>
     </p>
   </div>
@@ -367,7 +368,7 @@ export default function Home() {
         target="_blank"
         class="border-b-[1px] border-current pb-[-1px] opacity-[0.99]"
       >
-        Apple Music
+        <p className="contact-text">Apple Music</p>
       </Link>
     </p>
   </div>

@@ -165,6 +165,9 @@ html {
   font-size: 20px;
   
 }
+.last-div{
+  margin-bottom: 10%;
+}
 .card {
   font-family: "Orbit";
   font-size: 33px;
@@ -324,6 +327,7 @@ html {
   gap: 25px; /* Adjust this value if you want more or less space between items */
   width: 100%;
   margin-top: 50px;
+  font-family: "Orbit";
 }
 
 .contact-item {
@@ -335,6 +339,7 @@ html {
   gap: 10px;
   transition: box-shadow 0.4s ease-in-out;
   cursor: pointer;
+  font-family: "Orbit";
 }
 
 .contact-item:hover {
@@ -349,8 +354,10 @@ html {
 
 .contact-text {
   font-weight: bold;
+  font-family: "Orbit";
   font-size: 15px;
   margin: 0;
+  
 }
 
 .footer {
