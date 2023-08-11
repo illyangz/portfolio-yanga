@@ -17,7 +17,6 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 import { CgMusic } from "react-icons/cg";
-import { Analytics } from '@vercel/analytics/react';
 
 
 export default function Home() {
